@@ -20,7 +20,8 @@ class _LoginScreenState extends State<LoginScreen> {
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
-          )
+          ),
+          Image.asset('assets/images/onboarding.jpg')
         ],
       ),
     );
