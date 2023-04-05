@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:zoom_clone_app/resources/auth_method.dart';
 import 'package:zoom_clone_app/widgets/custom_button.dart';
@@ -24,7 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
             style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-            ),
+            ), 
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20.0),

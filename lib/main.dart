@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:zoom_clone_app/screens/login_screen.dart';
 import 'package:zoom_clone_app/utili/colors.dart';
 
+import 'resources/auth_method.dart';
 import 'screens/home_screen.dart';
 
 void main() async {
@@ -27,7 +28,20 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
       },
-      home: const LoginScreen(),
+      home: StreamBuilder(
+        stream: AuthMethods().authChanges,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+          if (snapshot.hasData) {
+            return const HomeScreen();
+          }
+          return const LoginScreen();
+        },
+      ),
     );
   }
 }
