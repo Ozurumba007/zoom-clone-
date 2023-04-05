@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:zoom_clone_app/resources/auth_method.dart';
 import 'package:zoom_clone_app/widgets/custom_button.dart';
@@ -32,7 +34,9 @@ class _LoginScreenState extends State<LoginScreen> {
             text: 'Google Sign In ',
             onPressed: () async {
               bool res = await _authMethods.signInWithGoogle(context);
-              if (res) {}
+              if (res) {
+                Navigator.pushNamed(context, '/home');
+              }
             },
           ),
         ],
