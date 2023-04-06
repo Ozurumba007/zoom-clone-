@@ -20,12 +20,27 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
-            selectedItemColor: Colors.white,
-            unselectedItemColor: Colors.grey,
-            onTap: onPageChanged,
-            backgroundColor: footerColor,
-            items: const [
+      appBar: AppBar(
+        elevation: 0,
+        title: const Text('Meet & Chat'),
+        centerTitle: true,
+      ),
+      body: Column(
+        children: [
+          Row(
+            children: [Icon(Icons.calendar_month)],
+          ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
+        onTap: onPageChanged,
+        currentIndex: _page,
+        type: BottomNavigationBarType.fixed,
+        unselectedFontSize: 14.0,
+        backgroundColor: footerColor,
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.comment_bank),
             label: 'Meet & Chat',
@@ -46,6 +61,8 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.logo_dev),
             label: 'Meet & Chat',
           ),
-        ]));
+        ],
+      ),
+    );
   }
 }

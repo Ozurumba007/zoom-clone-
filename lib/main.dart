@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:zoom_clone_app/screens/login_screen.dart';
 import 'package:zoom_clone_app/utili/colors.dart';
-
 import 'resources/auth_method.dart';
 import 'screens/home_screen.dart';
 
