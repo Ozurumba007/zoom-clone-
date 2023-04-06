@@ -53,6 +53,17 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
+          const Expanded(
+            child: Center(
+              child: Text(
+                'Create/Join Meetings with just a lick!',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
