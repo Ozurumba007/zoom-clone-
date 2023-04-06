@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zoom_clone_app/widgets/home_meeting_button.dart';
 
 import '../utili/colors.dart';
 
@@ -28,7 +29,29 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           Row(
-            children: [Icon(Icons.calendar_month)],
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              HomeMeetingButton(
+                onPressed: () {},
+                icon: Icons.videocam,
+                text: 'New Meeting',
+              ),
+              HomeMeetingButton(
+                onPressed: () {},
+                icon: Icons.add_box_rounded,
+                text: 'Join Meeting',
+              ),
+              HomeMeetingButton(
+                onPressed: () {},
+                icon: Icons.calendar_today,
+                text: 'Schedule',
+              ),
+              HomeMeetingButton(
+                onPressed: () {},
+                icon: Icons.arrow_upward_rounded,
+                text: 'Share Screen',
+              ),
+            ],
           ),
         ],
       ),
