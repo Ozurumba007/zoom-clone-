@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:zoom_clone_app/widgets/home_meeting_button.dart';
+import 'package:zoom_clone_app/screens/history_meeting_screen.dart';
 
 import '../utili/colors.dart';
-import 'history_meetings_screen.dart';
+import 'meetings_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,6 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> pages = [
     const MeetingScreen(),
+    const HistoryMeetingScreen(),
+    const Text('Contacts'),
+    const Text('Settings'),
   ];
 
   @override
@@ -52,10 +55,6 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Contact',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.arrow_upward_rounded),
-            label: 'Share Screen',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings_outlined),
