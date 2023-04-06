@@ -22,7 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
             style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-            ), 
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20.0),
