@@ -205,13 +205,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.18.0"
-  jitsi_meet_fix:
+  jitsi_meet:
     dependency: "direct main"
     description:
-      name: jitsi_meet_fix
+      name: jitsi_meet
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.0.5"
+    version: "4.0.0"
   jitsi_meet_platform_interface:
     dependency: transitive
     description:
@@ -219,13 +219,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
-  jitsi_meet_web_plugin_fix:
+  jitsi_meet_web_plugin:
     dependency: transitive
     description:
-      name: jitsi_meet_web_plugin_fix
+      name: jitsi_meet_web_plugin
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.2"
+    version: "2.0.0"
   js:
     dependency: transitive
     description:
